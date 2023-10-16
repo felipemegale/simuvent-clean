@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "name": "mytimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "type": "blob",
+      "direction": "out",
+      "name": "outputBlob",
+      "path": "outcontainer/{DateTime:yyyy}/{DateTime:MM}/{DateTime:dd}/{DateTime}.json",
+      "connection": "AzureWebJobsStorage",
+      "dataType": "string"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+\input{preamble}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+\thesisTitle
+  {Felipe M. Megale}
+  {An Awesome Thesis}
+  {Master of Science}
+  {Computer Science}
+  {Ontario Tech University}
+  {Dr. Richard W. Pazzi}
+  {August}
+  {2023}
+
+\include{abstract}
+\include{acknowledgements}
+
+% Include lists in singlespacing
+\singlespacing
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+\printglossary[style=list]
+\clearpage
+\doublespacing
+
+\pagenumbering{arabic}
+
+% Include the Chapters
+\include{introduction}
+\include{background}
+\include{approach}
+\include{experiments}
+\include{related_works}
+\include{conclusions}
+
+\bibliographystyle{acm}
+\bibliography{references}
+
+\end{document}

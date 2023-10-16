@@ -1,0 +1,55 @@
+# Gardiner Expy Traffic Flow Analysis
+
+- Maps generated are in ./maps
+- Graphs can be found under ./plots
+
+## Jupyter Notebooks
+- 000_number_of_readings
+    - Shows number of queries made everyday
+    - Shows number of queries made monthly
+- 005_area_of_interest
+    - Plots each unique set of coordinates provided by TomTom regarding the area that was used to provide the speed and travel time data
+- 010_current_speed
+    - 010_current_speed_all_months
+        - Shows the mean speed value for each month and a confidence interval
+    - 010_current_speed_sampled_month
+        - Samples a random month using Pandas' df.sample() method to randomly get a month
+        - Shows the actual speed values recorded for that month
+    - 010_current_speed_sampled_day
+        - Samples another random row from the dataframe
+        - Shows the actual speed value for a specific day (24h)
+    - 010_current_speed_month_and_dow_mean
+        - Shows the mean speed value for every day of the week of every month collected
+    - 010_current_speed_month_and_dow_median
+        - Similar to 010_current_speed_month_and_dow_mean, shows median instead of mean
+        - Mean shows the centre point of the list of values
+- 020_current_travel_time
+    - 020_current_travel_time_all_months
+        - Shows the mean travel time value for each month and a confidence interval
+    - 020_current_travel_time_sampled_month
+        - Samples a random month using Pandas' df.sample() method to randomly get a month
+        - Shows the actual travel time values recorded for that month
+    - 020_current_travel_time_sampled_day
+        - Samples another random row from the dataframe
+        - Shows the actual travel speed value for a specific day (24h)
+    - 020_current_travel_time_month_and_dow_mean
+        - Shows the mean travel time value for every day of the week of every month collected
+    - 020_current_travel_time_month_and_dow_median
+        - Similar to 020_current_travel_time_month_and_dow_mean, shows median instead of mean
+        - Mean shows the centre point of the list of values
+- 030_current_speed_vs_free_flow
+    - 030_current_speed_vs_free_flow
+        - Shows the comparison between the current speed vs. the speed when there is no traffic
+- 040_current_travel_time_vs_free_flow
+    - 040_current_travel_time_vs_free_flow
+        - Shows the comparison between the current travel time vs. the time when there is no traffic
+- 050_current_speed_vs_current_travel_time
+    - 050_current_speed_vs_travel_time
+        - Compares the values for current speed and current travel time
+- 060_free_flow_speed_vs_free_flow_travel_time
+    - 060_free_flow_speed_vs_travel_time
+        - Compares the values for free flow speed and free flow travel time
+- 070_correlations
+    - 070_speed_travel_time_correlation
+        - Plots a heatmap with the correlations between current and free flow speed and travel time
+        - Correlation type used is Pearson

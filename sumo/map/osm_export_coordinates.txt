@@ -1,0 +1,9 @@
+If exporting directly from OpenStreetMap (openstreetmap.org)
+N 43.6587
+E -79.3457
+S 43.6343
+W -79.4109
+
+--------------------
+If using Sumo's OSM Web Wizard
+43.642945 -79.379648
